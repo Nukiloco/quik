@@ -79,3 +79,5 @@ You can however help me out in many ways including:
 
 ### Donations
 You can help me out by donating so I can spend more time improving it!
+
+TODO setup donations
