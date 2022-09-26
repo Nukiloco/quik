@@ -1,0 +1,15 @@
+# Normalize line endings for all files that Git considers text files
+* text=auto eol=lf
+
+# Ignore all the other files
+/**                export-ignore
+
+# Include the quik addon folder
+/addons/quik       !export-ignore
+
+# Remove the quik test folder as it's not required for the addon to function
+/addons/quik/test/ export-ignore
+
+# Large file storage
+*.png filter=lfs diff=lfs merge=lfs -text
+*.xcf filter=lfs diff=lfs merge=lfs -text
