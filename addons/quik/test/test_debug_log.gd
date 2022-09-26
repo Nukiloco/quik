@@ -9,4 +9,4 @@ func test_track():
 	var new_object_value_change_test = object_value_change_test_scene.instance()
 	get_node("/root").add_child(new_object_value_change_test)
 	yield(get_tree().create_timer(1), "timeout")
-	q.d.lt(new_object_value_change_test, "random_value")
+	q.d.t(new_object_value_change_test, "random_value")

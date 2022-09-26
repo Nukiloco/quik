@@ -9,6 +9,16 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "DebugLog",
+"language": "GDScript",
+"path": "res://addons/quik/debug_log.gd"
+}, {
+"base": "Node2D",
+"class": "DebugVisual",
+"language": "GDScript",
+"path": "res://addons/quik/debug_visual.gd"
+}, {
 "base": "Reference",
 "class": "GutHookScript",
 "language": "GDScript",
@@ -18,10 +28,18 @@ _global_script_classes=[ {
 "class": "GutTest",
 "language": "GDScript",
 "path": "res://addons/gut/test.gd"
+}, {
+"base": "Node",
+"class": "Quik",
+"language": "GDScript",
+"path": "res://addons/quik/quik.gd"
 } ]
 _global_script_class_icons={
+"DebugLog": "",
+"DebugVisual": "",
 "GutHookScript": "",
-"GutTest": ""
+"GutTest": "",
+"Quik": ""
 }
 
 [application]

@@ -36,7 +36,7 @@ func process_node_track(delta):
 			storage["(%s) %s" % [node_ref.name, key]] = value
 		should_update_text = true
 
-func lt(node_ref, var_name):
+func t(node_ref, var_name):
 	node_track[var_name] = node_ref
 
 func l(var_name, var_value):

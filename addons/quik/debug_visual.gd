@@ -1,4 +1,4 @@
-class_name VisualDebug
+class_name DebugVisual
 extends Node2D
 
 var rect_storage = {}
@@ -62,11 +62,11 @@ func process_rect_storage_node_track(delta):
 					size_value = new_size
 			
 			
-			lp(key, Rect2(position_value, size_value), filled_value, width_value)
+			p(key, Rect2(position_value, size_value), filled_value, width_value)
 		should_update_visual = true
 
-# visual log position track
-func lpt(node_ref, var_name, width = 1, filled = true, color: Color = Color.green, custom_size = null):
+# track node position
+func tp(node_ref, var_name, width = 1, filled = true, color: Color = Color.green, custom_size = null):
 	# prevent warning spam
 	if filled:
 		width = 1
@@ -81,7 +81,7 @@ func lpt(node_ref, var_name, width = 1, filled = true, color: Color = Color.gree
 	}
 
 # visual log position
-func lp(var_name, rect_or_pos = Rect2(Vector2.ZERO, Vector2.ONE * 5), width = 1, filled = true, color: Color = Color.green):
+func p(var_name, rect_or_pos = Rect2(Vector2.ZERO, Vector2.ONE * 5), width = 1, filled = true, color: Color = Color.green):
 	if rect_or_pos is Vector2:
 		rect_or_pos = Rect2(rect_or_pos, Vector2.ONE * 5)
 	
