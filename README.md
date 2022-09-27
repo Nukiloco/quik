@@ -1,4 +1,4 @@
-![logo](./assets/logo.png)
+![logo](./addons/quik/assets/logo.png)
 
 # QUIK
 The quick utility addon for Godot! Currently focused on debugging tools!
