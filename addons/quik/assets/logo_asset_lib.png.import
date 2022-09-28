@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/logo.png-ce5d08e66b5a9eaaecb1fb7cf42bb67e.stex"
+path="res://.import/logo_asset_lib.png-81486b03d76e312adeb56fb3ea76c4eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/quik/assets/logo.png"
-dest_files=[ "res://.import/logo.png-ce5d08e66b5a9eaaecb1fb7cf42bb67e.stex" ]
+source_file="res://addons/quik/assets/logo_asset_lib.png"
+dest_files=[ "res://.import/logo_asset_lib.png-81486b03d76e312adeb56fb3ea76c4eb.stex" ]
 
 [params]
 

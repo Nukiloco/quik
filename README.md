@@ -1,10 +1,10 @@
 ![logo](./addons/quik/assets/logo.png)
 
 # QUIK
-The quick utility plugin for Godot! Currently focused on debugging tools!
+The quick utility add-on for Godot! Currently focused on debugging tools!
 
 ## Install and enable
-To install and enable Quik, download the plugin on the asset lib.
+To install and enable Quik, download the add-on on the asset lib.
 Then go to ``Project > Plugins > Quik`` and press ``Enable``.
 
 Quik will automatically add in a singleton ``q`` to the project.
