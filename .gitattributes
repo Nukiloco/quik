@@ -12,7 +12,3 @@
 
 # Ignore the assets folder
 /addons/quik/assets/        export-ignore
-
-# Large file storage
-*.png filter=lfs diff=lfs merge=lfs -text
-*.xcf filter=lfs diff=lfs merge=lfs -text
