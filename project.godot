@@ -33,13 +33,19 @@ _global_script_classes=[ {
 "class": "Quik",
 "language": "GDScript",
 "path": "res://addons/quik/quik.gd"
+}, {
+"base": "Node",
+"class": "Util",
+"language": "GDScript",
+"path": "res://addons/quik/util.gd"
 } ]
 _global_script_class_icons={
 "DebugLog": "",
 "DebugVisual": "",
 "GutHookScript": "",
 "GutTest": "",
-"Quik": ""
+"Quik": "",
+"Util": ""
 }
 
 [application]
