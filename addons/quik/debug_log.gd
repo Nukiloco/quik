@@ -1,4 +1,4 @@
-class_name DebugLog
+class_name QuikDebugLog
 extends Node
 
 onready var label_node = find_node("Label")

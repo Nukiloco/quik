@@ -1,4 +1,4 @@
-class_name DebugVisual
+class_name QuikDebugVisual
 extends Node2D
 
 var rect_storage = {}

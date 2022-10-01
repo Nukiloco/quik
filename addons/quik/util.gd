@@ -1,4 +1,4 @@
-class_name Util
+class_name QuikUtil
 extends Node
 
 func _ready():
