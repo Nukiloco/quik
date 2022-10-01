@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://addons/quik/test/object_sprite_test.gd" type="Script" id=1]
-[ext_resource path="res://assets/logo_short.png" type="Texture" id=2]
+[ext_resource path="res://addons/quik/assets/logo_asset_lib.png" type="Texture" id=2]
 
 [node name="ObjectSpriteTest" type="Node2D"]
 script = ExtResource( 1 )

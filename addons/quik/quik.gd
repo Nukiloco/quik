@@ -14,7 +14,7 @@ func set_d(val):
 
 func get_d() -> QuikDebugLog:
 	if !_debug_log_node:
-		return get_node('DebugLog')
+		return get_node('DebugLog') as QuikDebugLog
 	return _debug_log_node
 
 # Debug Visual
@@ -24,7 +24,7 @@ func set_dv(val):
 
 func get_dv() -> QuikDebugVisual:
 	if !_debug_visual_node:
-		return get_node('DebugVisual')
+		return get_node('DebugVisual') as QuikDebugVisual
 	return _debug_visual_node
 
 # Util
@@ -34,5 +34,5 @@ func set_u(val):
 
 func get_u() -> QuikUtil:
 	if !_util_node:
-		return get_node('Util')
+		return get_node('Util') as QuikUtil
 	return _util_node
