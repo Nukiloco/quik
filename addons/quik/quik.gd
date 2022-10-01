@@ -13,8 +13,8 @@ func set_d(val):
 	d = val
 
 func get_d() -> QuikDebugLog:
-	if !_is_ready:
-		yield(self, "ready")
+	if !_debug_log_node:
+		return get_node('DebugLog')
 	return _debug_log_node
 
 # Debug Visual
@@ -23,8 +23,8 @@ func set_dv(val):
 	dv = val
 
 func get_dv() -> QuikDebugVisual:
-	if !_is_ready:
-		yield(self, "ready")
+	if !_debug_visual_node:
+		return get_node('DebugVisual')
 	return _debug_visual_node
 
 # Util
@@ -33,6 +33,6 @@ func set_u(val):
 	u = val
 
 func get_u() -> QuikUtil:
-	if !_is_ready:
-		yield(self, "ready")
-	return _debug_visual_node
+	if !_util_node:
+		return get_node('Util')
+	return _util_node
