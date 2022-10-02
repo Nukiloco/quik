@@ -12,9 +12,12 @@ func get_pretty_log_string():
 		var key = storage.keys()[i]
 		var value = storage.values()[i]
 		var line_break = ""
+		var colon = ''
+		if !(typeof(value) == TYPE_STRING && value == ''):
+			colon = ': '
 		if i != storage.size():
 			line_break = "\n"
-		out += "%s: %s%s" % [key, value, line_break]
+		out += "%s%s%s%s" % [key, colon, value, line_break]
 	return out
 
 func set_label_text(text):
@@ -39,6 +42,6 @@ func process_node_track(delta):
 func t(node_ref, var_name):
 	node_track[var_name] = node_ref
 
-func l(var_name, var_value):
+func l(var_name, var_value = ''):
 	storage[var_name] = var_value
 	should_update_text = true

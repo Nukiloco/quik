@@ -4,6 +4,9 @@ var object_value_change_test_scene = preload("res://addons/quik/test/object_valu
 
 func test_log():
 	q.d.l('test!', 'hello')
+	q.d.l('vector!', Vector2(10, 10))
+	q.d.l('yay!')
+	assert_true(true)
 
 func test_track():
 	var new_object_value_change_test = object_value_change_test_scene.instance()
