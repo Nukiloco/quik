@@ -51,23 +51,6 @@ var player: KinematicBody2D = get_node('Player')
 q.dv.tp(player, 'player is here!', 5, true)
 ```
 
-### Wait for ready state on node
-```py
-onready var label_node = get_node('Label')
-
-var health = 100
-func set_health(val):
-	health = val
-	# Waits for our own node to be ready before executing the next line of code
-	# When this node is already ready, it will continue running instead of waiting
-	yield(q.u.wfr(self), 'completed')
-	if label_node:
-		label_node.text = val
-
-func _init(val):
-	set_health(val)
-```
-
 ## FAQ
 ### What is the license?
 MIT License. It is located in LICENSE.md
