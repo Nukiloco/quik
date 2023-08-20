@@ -1,5 +1,8 @@
 ![logo](./addons/quik/assets/logo.png)
 
+# IMPORTANT:
+Currently this add-on was designed for an older version of Godot. And was unmaintained for a while. I might start to update this in the future when I need to.
+
 # QUIK
 The quick utility add-on for Godot! Currently focused on debugging tools!
 
